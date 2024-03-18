@@ -18,8 +18,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
                  <img src="${imageUrl}">`
 
  }
-     
-        
+          
         
 function validateInput(testInput) {
     
@@ -34,8 +33,7 @@ function validateInput(testInput) {
     };
 
 };
-        
-
+    
     
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    
@@ -97,7 +95,6 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         document.getElementById("launchStatus").style.color = 'green'; 
     }
 }
- 
 
 
  async function myFetch() {
@@ -115,6 +112,7 @@ function pickPlanet(planets) {         //planets = json array of planets
   return planets[index];                //should return json[index]
 }
  
+
  module.exports.addDestinationInfo = addDestinationInfo;
  module.exports.validateInput = validateInput;
  module.exports.formSubmission = formSubmission;
